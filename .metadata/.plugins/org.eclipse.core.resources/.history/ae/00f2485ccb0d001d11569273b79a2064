@@ -1,0 +1,45 @@
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Practice2 {
+
+	static int a[] = { 4, 5, 1, 7, 2, 47, 8 };
+
+	private static void ascendingSort() {
+
+		Arrays.sort(a);
+		System.out.println(a);
+	}
+
+	private static void decendingSort() {
+		int temp = 0;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i + 1; j < a.length; j++) {
+				temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+			}
+
+		}
+		System.out.println(a);
+	}
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		
+
+		switch (x) {
+		case 1: ascendingSort();
+			
+			break;
+
+		default: decendingSort();
+			break;
+		}
+
+	}
+
+}

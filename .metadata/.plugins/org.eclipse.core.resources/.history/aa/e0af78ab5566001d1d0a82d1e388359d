@@ -1,0 +1,27 @@
+package mapsQuestions;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ListWithMapIteration {
+
+	public static void main(String[] args) {
+
+		LinkedHashMap<String, String> mMap = new LinkedHashMap<String, String>();
+		LinkedHashMap<String, String> mMap1 = new LinkedHashMap<String, String>();
+		ArrayList<LinkedHashMap<String, String>> list = new ArrayList<LinkedHashMap<String, String>>();
+		list.add(new LinkedHashMap<String, String>());
+		mMap.put("start", "yes");
+		mMap.put("text", "yes");
+		list.add(mMap);
+		mMap1.put("start", "no");
+		mMap1.put("text", "no");
+		list.add(mMap1);
+		System.out.println("Final result: " + list);
+
+	}
+
+}

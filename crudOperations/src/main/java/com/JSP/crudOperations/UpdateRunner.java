@@ -1,0 +1,35 @@
+package com.JSP.crudOperations;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class UpdateRunner {
+
+	public static void main(String[] args) {
+
+		Session ss = new Configuration().configure().buildSessionFactory().openSession();
+		Transaction tr = ss.beginTransaction();
+
+		/* 1st method */
+		/*more preffered*/
+		Student s = ss.load(Student.class, 104);
+		s.setName("Shri Laxman");
+		s.setPerc(99);
+
+		/* 2nd Method */
+		/* here the complete object is displaced  by the new object because of id  */
+		
+		Student s1= new Student();
+		s1.setId(105);
+		s1.setName("Shri Ram");
+		s1.setPerc(100);
+		
+		ss.update(s1);
+		
+
+		tr.commit();
+		ss.close();
+	}
+
+}

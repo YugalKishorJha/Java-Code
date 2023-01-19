@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.JSP.DeleteUsingHQL.Employee" table="Employee">
+
+
+		<id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+		<property name="name" column="name" type="string" />
+		<property name="sal" column="sal" type="double" />
+
+	</class>
+	
+	<query name ="q1">from Employee e where id=?</query>
+	<sql-query name ="q2">from Employee e where id=?</sql-query>
+</hibernate-mapping>

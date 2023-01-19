@@ -1,0 +1,19 @@
+package streamInterviewQuestionJavaTechie;
+
+import java.util.Arrays;
+
+public class palindromeString {
+
+	
+	public static void main(String[] args) {
+		String str="121";
+		int i=0,j=str.length()-1;
+		if(Arrays.stream(str.split("")).noneMatch((s)->s.charAt(i)!=s.charAt(j)))
+			System.out.println("String is palindrome");
+		else
+			System.out.println("String is not a palindrome");
+		
+
+	}
+
+}

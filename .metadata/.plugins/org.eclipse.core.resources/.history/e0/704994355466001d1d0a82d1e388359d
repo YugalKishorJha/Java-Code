@@ -1,0 +1,25 @@
+package mapsQuestions;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class ListWithMapIteration {
+
+	public static void main(String[] args) {
+
+		HashMap<String, String> mMap = new HashMap<String, String>();
+		HashMap<String, String> mMap1 = new HashMap<String, String>();
+		ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		list.add(new HashMap<String, String>());
+		mMap.put("start", "yes");
+		mMap.put("text", "yes");
+		list.add(mMap);
+		mMap1.put("start", "no");
+		mMap1.put("text", "no");
+		list.add(mMap);
+		System.out.println("Final result: " + list);
+
+	}
+
+}

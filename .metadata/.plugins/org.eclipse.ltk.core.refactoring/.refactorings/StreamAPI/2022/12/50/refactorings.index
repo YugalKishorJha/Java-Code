@@ -1,0 +1,8 @@
+1670150800781	Extract local variable 'of'
+1670157992976	Delete element
+1670160180239	Rename type 'UseOF'
+1670163266821	Extract local variable 'reduce'
+1670170441925	Rename local variable 'b'
+1670172654886	Extract local variable 'sorted'
+1670172769009	Rename type 'UseOfStreamAndSorted'
+1670177467584	Extract local variable 'collect'

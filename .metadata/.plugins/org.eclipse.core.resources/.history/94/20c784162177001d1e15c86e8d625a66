@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class ExceptionRaisingAndHandling {
+	
+	public static void main(String[] args) {
+		String ob[]= {"Hello","Hi","Bye",null};
+
+		for (int i = 0; i < ob.length; i++) {
+			try {
+				ob[i]=ob[i].length()+"";
+			} catch (NullPointerException e) {
+				System.out.println("There is null element present in the array");
+			}
+		}
+		
+
+	}
+
+}

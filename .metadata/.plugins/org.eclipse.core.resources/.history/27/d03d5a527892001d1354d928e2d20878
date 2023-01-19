@@ -1,0 +1,12 @@
+package streamInterviewQuestionJavaTechie;
+
+public class Anagrams {
+	String s1="aeiou";
+	String s2="uioea";
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

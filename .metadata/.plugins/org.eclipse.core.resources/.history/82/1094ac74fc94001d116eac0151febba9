@@ -1,0 +1,27 @@
+import java.util.List;
+
+public class MaxAndMinUsingReduce {
+
+	public static void main(String[] args) {
+
+		List<Integer> ll = List.of(10, 20, 7, 165, 0, -5, 20);
+		List<Integer> ll1= List.of(10, 20, 7, 165, 5, 20);
+		List<Integer> ll2= List.of(-10,-20, -7, -165, -5, -20);
+
+		System.out.println(getMaxValue(ll2));
+		System.out.println(getMinValue(ll2));
+
+	}
+
+	private static int getMaxValue(List<Integer> ll) {
+		return ll.stream().reduce(0, (a, b) -> a > b ? a : b);
+
+	}
+
+	private static int getMinValue(List<Integer> ll) {
+		return ll.stream().reduce(0, (a, b) -> b > a ? a : b);
+	}
+
+}
+
+// by taking the integer highest And lowest value makes the function -ive proof

@@ -1,0 +1,21 @@
+package streamInterviewQuestionJavaTechie;
+
+import java.util.Arrays;
+
+public class CountsNoOfVowelsAndConsonants {
+
+	public static void main(String[] args) {
+
+		String s = "aeioumnpw";
+		String[] split = s.split("");
+		long noOfVowels = Arrays.stream(split).filter(
+				a -> a.contains("a") || a.contains("e") || a.contains("i") || a.contains("o") || a.contains("u"))
+				.count();
+		long noOfConsonants = Arrays.stream(split)
+				.filter(a -> !(a == "a" || a == "e" || a == "i" || a == "o" || a == "u")).count();
+		System.out.println(noOfVowels);
+		System.out.println(noOfConsonants);
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package freeorgExasJavaBasics;
+
+public enum States {
+	PENDING, PROCESSING, COMPLETED
+}

@@ -1,0 +1,13 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class ReverseStringUsingJava8 {
+
+	public static void main(String[] args) {
+		String name="reversed";
+		Collections.reverse(Arrays.asList(name.split("")));
+		System.out.println(name);
+
+	}
+
+}

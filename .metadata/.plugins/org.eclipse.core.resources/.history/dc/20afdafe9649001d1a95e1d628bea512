@@ -1,0 +1,17 @@
+package testClasses;
+
+public class Test {
+	public static void main(String[] args) {
+
+		String s = "ysjhb";
+		String s1 = "yjhsbv";
+
+		s = s.toLowerCase();
+		char ch[] = s.toCharArray();
+
+		if (ch[1] == 's' || ch[ch.length - 3] == 's')
+			System.out.println(s);
+
+	}
+
+}

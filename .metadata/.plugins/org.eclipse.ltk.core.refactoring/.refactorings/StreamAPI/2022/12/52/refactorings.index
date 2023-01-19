@@ -1,0 +1,4 @@
+1671877779195	Rename type 'UsingStreamsAsMEthod'
+1671877931592	Extract local variable 'oddPredicate'
+1671877946546	Extract local variable 'evenPredicate'
+1671878044232	Extract method 'streamMethod'

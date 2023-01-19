@@ -1,0 +1,13 @@
+public class ReverseStringUsingJava8 {
+
+	public static void main(String[] args) {
+		String name="reversed";
+		String[] splitArray = name.split("");
+		String result="";
+		
+//		IntStream.range(splitArray.length-1,0 ).forEach((i)->result+=name.charAt(i));
+		
+		
+	}
+
+}

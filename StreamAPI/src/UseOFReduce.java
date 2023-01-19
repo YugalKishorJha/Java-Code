@@ -1,0 +1,27 @@
+import java.util.List;
+
+public class UseOFReduce {
+
+	static int add(int aggregator, int nextNumber) {
+		return aggregator + nextNumber;
+	}
+
+	public static void main(String[] args) {
+
+		List<Integer> ll = List.of(10, 20, 30, 40);
+		List<Integer> ll1 = List.of();// returns optional hence for null provides back Optional.empty
+
+//		System.out.println(ll1.stream().reduce(Integer::sum));
+
+//		 multiple types present of reduce method along with the optional variant
+
+		System.out.println(ll.stream().reduce(0, (a, b) -> a + b));
+		// lambda expression for the above statement
+
+		System.out.println(ll.stream().reduce(0, Integer::sum));
+		// In Integer class predefined method for getting sum of two numbers (doing the
+		// same thing as above)
+
+	}
+
+}

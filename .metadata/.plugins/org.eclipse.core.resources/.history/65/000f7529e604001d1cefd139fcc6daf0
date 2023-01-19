@@ -1,0 +1,19 @@
+package com.JSP.Prac1;
+
+public class Try1 {
+
+	public static void main(String[] args) {
+
+		String s = "yugal";
+		String s1 = "yugal";
+//		s1=s;
+
+		boolean rs = s1.equals(s1);
+		System.out.println(rs);
+		
+		System.out.println(s1!=s);
+		
+
+	}
+
+}

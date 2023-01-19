@@ -1,0 +1,16 @@
+package testClasses;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestSquare {
+
+	@Test
+	public void checkTest() {
+		Square sq = new Square();
+		int sqr = sq.getSquare(5);
+		assertEquals(6, sqr);
+	}
+
+}

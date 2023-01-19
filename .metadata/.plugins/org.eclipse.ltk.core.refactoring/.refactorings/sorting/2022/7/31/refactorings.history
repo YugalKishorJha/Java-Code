@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;model.StringComparator&apos; to &apos;SongComparator&apos;&#x0D;&#x0A;- Original project: &apos;sorting&apos;&#x0D;&#x0A;- Original element: &apos;model.StringComparator&apos;&#x0D;&#x0A;- Renamed element: &apos;model.SongComparator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StringComparator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;model{StringComparator.java[StringComparator" matchStrategy="1" name="SongComparator" qualified="false" references="true" similarDeclarations="false" stamp="1659010824290" textual="false" version="1.0"/>
+</session>

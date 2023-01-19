@@ -1,0 +1,21 @@
+package streamInterviewQuestionJavaTechie;
+
+import java.util.Comparator;
+import java.util.LinkedHashSet;
+import java.util.List;
+
+public class FindTheThridLargestElementInListBrillo {
+
+	public static void main(String[] args) {
+		
+		List<Integer> ll = List.of(10,20,3,0,4,2,0,4,20,2,5);
+		LinkedHashSet<Integer> lhs= new LinkedHashSet<Integer>(); 
+		
+		ll.stream().sorted(Comparator.reverseOrder()).forEach(lhs::add);
+		System.out.println(lhs);
+		
+//		ll.stream().
+
+	}
+
+}

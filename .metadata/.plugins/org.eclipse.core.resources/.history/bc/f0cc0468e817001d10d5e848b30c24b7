@@ -1,0 +1,17 @@
+package freeorgExasJavaBasics;
+
+public class ManupulationOnEnum {
+
+	/*For calling states we always needs to use the */
+	
+	public static void main(String[] args) {
+		States s1 = States.COMPLETED;// need to always hold the value of the enum
+
+		for (States s : States.values()/* Here we need to call values method to iterate over the States enum */) {
+			
+			if(s==States.PENDING)
+		}
+
+	}
+
+}

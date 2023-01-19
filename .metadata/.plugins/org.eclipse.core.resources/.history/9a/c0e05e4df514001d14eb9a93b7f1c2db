@@ -1,0 +1,39 @@
+package com.JSP.crudOperations;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+public class ReadRunner {
+	public static void main(String[] args) {
+		Session ss = new Configuration().configure().buildSessionFactory().openSession();
+
+		Student s1 = ss.load(Student.class, 101);
+		Student s2 = ss.load(Student.class, 102);
+		Student s3 = ss.load(Student.class, 103);
+		Student s4 = ss.load(Student.class, 104);
+
+		/* 1st method */
+		List<Student> ll = new ArrayList<Student>();
+		ll.add(s1);
+		ll.add(s2);
+		ll.add(s3);
+		ll.add(s4);
+
+		for (Student s : ll) {
+			System.out.println(s.getId());
+			System.out.println(s.getName());
+			System.out.println(s.getPerc());
+		}
+
+		/* 2nd method */
+		ss.get(Student.class, s1);
+		
+
+		ss.close();
+
+	}
+
+}

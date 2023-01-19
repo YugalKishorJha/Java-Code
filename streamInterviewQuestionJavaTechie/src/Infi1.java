@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Infi1 {
+
+	static int solve(int n, int k, ArrayList<Integer> al) {
+		if (k == 0 || k == 5)
+			return max(al);
+		else
+			return max2((al.subList(0, k)), (al.subList(k + 1, al.size())));
+
+	}
+
+	static private int max(ArrayList<Integer> al) {
+		Collections.sort(al);
+		return al.get(al.size() - 1);
+	}
+
+	static private int max2(List<Integer> list, List<Integer> list2) {
+		Collections.sort(list);
+		Collections.sort(list2);
+		return (list.get(list.size() - 1) + list2.get(list2.size() - 1));
+	}
+
+	public static void main(String[] args) {
+		int n = 5;
+		int k = 2;
+//		List<Integer> ll = List.of(10, 20, 30, 40, 50);
+		ArrayList<Integer> al = new ArrayList<>() {
+			{
+				add(10);
+				add(20);
+				add(30);
+				add(40);
+				add(50);
+			}
+		};
+		System.out.println(solve(5, 1, al));
+
+	}
+
+}

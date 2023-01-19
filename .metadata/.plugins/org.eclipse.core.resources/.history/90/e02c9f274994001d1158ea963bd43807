@@ -1,0 +1,18 @@
+package streamInterviewQuestionJavaTechie;
+
+public class MemoryTest {
+
+	public static void main(String[] args) {
+
+		
+		MemoryTest m1= new MemoryTest();
+		MemoryTest m2= new MemoryTest();
+		
+		m2=m1;
+		m2=null;
+		
+		System.out.println(m1);
+		System.out.println(m2);
+	}
+
+}
